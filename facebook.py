@@ -2,6 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 import sys
+from colorama import Fore, Back, Style
 import mechanize
 import cookielib
 import random
