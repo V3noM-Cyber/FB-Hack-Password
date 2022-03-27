@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-from colorama import Fore, Back, Style
 import sys
 import mechanize
 import cookielib
@@ -54,7 +53,6 @@ def brute(password):
 			
 def search():
 	global password
-	global Back.GREEN
 	passwords = open(passwordlist,"r")
 	for password in passwords:
 		password = password.replace("\n","")
