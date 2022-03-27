@@ -48,7 +48,7 @@ def brute(password):
 	sub = br.submit()
 	log = sub.geturl()
 	if log != login and (not 'login_attempt' in log):
-			print("\n\n[+] Password Find = {}".format(password))
+			print(Fore.GREEN+"\n\n[+] Password Find = {}".format(password))
 			raw_input("ANY KEY to Exit....")
 			sys.exit(1)
 
@@ -63,7 +63,7 @@ def search():
 		
 #welcome 
 def welcome():
-	wel = Fore.GREEN+"""
+	wel = """
                        ################################                                   
                      #####################################                                
                   ###########################################                             
