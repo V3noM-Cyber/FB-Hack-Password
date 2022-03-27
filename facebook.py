@@ -6,7 +6,6 @@ import cookielib
 import random
 
 
-Fore.GREEN
 
 email = str(raw_input("Enter the Facebook Username (or) Email (or) Phone Number : "))
 
